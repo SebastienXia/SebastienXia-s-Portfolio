@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background: #000000;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace, serif, sans-serif;
+    color: azure;
+    text-align: center;
+}
+h1{
+    margin: 25px;
+}
+h2{
+    margin-top: 25px;
+}
+div{
+    margin: 10px;
+}
+nav a{
+    color: azure;
+    font-size: 20px;
+    margin: 10px;
+}
+.imgCours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;}
+.imgCours img{
+    width: 200px;
+    height: auto;
+    border: 2px solid azure;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    scale: 0.95;
+}
+.imgCours img:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+@media (max-width: 725px) {
+    .imgCours{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgCours img{
+        width: 50%;
+    }
+}

@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background: #f6f8fa;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace, serif, sans-serif;
+}
+
+#studyachivelink p{
+    font-family: 'Roboto Mono', monospace, serif, sans-serif;
+    font-size: 1.5rem;
+    color: #555;
+    text-decoration: none;
+    opacity: 0.9;
+    scale: 0.9;
+    transition-duration: 0.5s;
+}
+#studyachivelink p:hover{
+  opacity: 1;
+  scale: 1;
+  transition-property: all;
+}
+
+#studyachivelink{
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+#studyachivelink:hover {
+  text-decoration: underline;
+  transition-duration: 0.5s;
+}
+#studyachivelink:visited {
+  color: #555;
+}
+
+.boxCourses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#L1{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}

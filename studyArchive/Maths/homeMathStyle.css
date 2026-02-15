@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    background: #000000;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace, serif, sans-serif;
+    color: azure;
+    text-align: center;
+}
+h1{
+    margin: 25px;
+}
+a{
+    margin: 5px;
+    color: azure;
+}
+div{
+    margin: 10px;
+}

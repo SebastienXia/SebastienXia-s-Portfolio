@@ -1,0 +1,252 @@
+
+body {
+
+  --dot-bg: rgb(255, 255, 255);
+  --dot-color: rgb(0, 0, 0);
+  --dot-size: 1px;
+  --dot-space: 22px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#studyachivelink p{
+  font-family: 'Roboto Mono', monospace, serif, sans-serif;
+  font-size: 1.5rem;
+  color: #555;
+  text-decoration: none;
+  opacity: 0.9;
+  scale: 0.9;
+  transition-duration: 0.5s;
+}
+#studyachivelink p:hover{
+  opacity: 1;
+  scale: 1;
+  transition-property: all;
+}
+
+#studyachivelink{
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+#studyachivelink:hover {
+  text-decoration: underline;
+  transition-duration: 0.5s;
+}
+#studyachivelink:visited {
+  color: #555;
+}
+header{
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 315px;
+  margin-bottom: 320px;
+}
+
+h1{
+  font-family: 'Roboto Mono', monospace, serif, sans-serif;
+  font-size: 5rem;
+  color: #333;
+  margin: 0;
+}
+
+#luffyGearFive{
+  width: 300px;
+  border-radius: 15px;
+  position: absolute;
+  z-index:-1;
+  margin-left: 525px;
+  opacity: 0.8;
+  box-shadow: 20px 20px 2.5px rgba(32, 32, 32, 0.1);
+}
+
+h2{
+  font-family: 'Tangerine', cursive, serif, sans-serif;
+  font-size: 4rem;
+  margin: 10px 0px 30px 0px;
+}
+
+#lang {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  background: white;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  margin: 0 ;
+}
+
+    /* classe contrôlant la visibilité (pour effet fondu) */
+#lang.visible {
+  opacity: 1;
+}
+
+    /* Box1 */
+.box1{
+  font-family: 'Roboto Mono', monospace, serif, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+  padding: 25px;
+}
+#UniversitéLogo{
+  position: absolute;
+  width: 300px;
+  opacity: 0.5;
+  z-index: -1;
+  margin-bottom: 340px;
+}
+.box1 img{
+  width: 35px;
+  margin-bottom: 15px;
+  transition-duration: 0.3s;
+  margin: 5px;
+}
+.box1 img:hover{
+  scale: 1.2;
+}
+
+.certificatsBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.certificatsBox img{
+  width: 200px;
+  margin: 10px;
+    
+}
+
+.projectbox{
+  font-family: 'Roboto Mono', monospace, serif, sans-serif;
+  margin-top: 25px;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  margin-top: 30px;
+  height: 50px;
+  width: 100%;
+  background-color: #126fcc;
+}
+
+
+/* Styles pour les petits écrans */
+
+@media (max-width: 960px) {
+    #luffyGearFive{
+    width: 250px;
+    margin-left: 350px;
+  }
+}
+
+@media (max-width: 725px) {
+  h1 {
+    font-size: 3re
+  }
+
+  #luffyGearFive{
+    width: 200px;
+    margin-left: 250px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #lang {
+    font-size: 1.5rem;
+  }
+
+  #studyachivelink p {
+    font-size: 1.3rem;
+  }
+
+  .box1{
+    width: 350px;
+  }
+  #UniversitéLogo{
+    width: 200px;
+    margin-bottom: 425px;
+  }
+  .box1 img{
+    width: 30px;
+  }
+
+  .certificatsBox img{
+    width: 150px;
+  }
+
+  .projectbox p{
+    font-size: 1rem;
+  }
+}
+
+/* Styles pour les très petits écrans */
+
+@media (max-width: 430px) {
+
+  header{
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  #luffyGearFive{
+    width: 100px;
+    margin-left:0;
+    box-shadow: none;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #lang {
+    font-size: 1.4rem;
+  }
+
+  #studyachivelink p{
+    font-size: 1rem;
+  }
+
+  .box1{
+    width: 250px;
+  }
+  #UniversitéLogo{
+    width: 150px;
+    margin-bottom: 495px;
+  }
+  .box1 img{
+    width: 25p
+  }
+
+  .projectbox p{
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
